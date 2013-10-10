@@ -1,5 +1,6 @@
 /*
  * Reference: http://digilander.libero.it/robang/rubrica/serial.htm 
+ * http://www.adamjiang.com/pukiwiki/index.php?Linux%E4%B8%B2%E5%8F%A3%E7%BC%96%E7%A8%8B%E8%AF%A6%E8%A7%A3
  */
 #include <stdio.h>
 #include <stdlib.h>
