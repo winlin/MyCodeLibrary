@@ -1,7 +1,8 @@
+/*
+ * Reference: http://digilander.libero.it/robang/rubrica/serial.htm 
+ */
+
 #include <jni.h>
-
-#define LOG_TAG "com.ipaloma.scannerdemo"
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -12,14 +13,14 @@
 #include <sys/ioctl.h>
 #include <android/log.h>
 
+#define MAX_CODE_LENGHT		256
+#define SCANNER_DEV_NOTE	"/dev/ttyMT1"
+#define LOG_TAG "com.ipaloma.scannerdemo"
 #define LOGV(...) __android_log_print(ANDROID_LOG_VERBOSE, LOG_TAG, __VA_ARGS__);
 #define LOGD(...) __android_log_print(ANDROID_LOG_DEBUG  , LOG_TAG, __VA_ARGS__);
 #define LOGI(...) __android_log_print(ANDROID_LOG_INFO   , LOG_TAG, __VA_ARGS__);
 #define LOGW(...) __android_log_print(ANDROID_LOG_WARN   , LOG_TAG, __VA_ARGS__);
 #define LOGE(...) __android_log_print(ANDROID_LOG_ERROR  , LOG_TAG, __VA_ARGS__);
-
-#define SCANNER_DEV_NOTE	"/dev/ttyMT1"
-#define MAX_CODE_LENGHT		256
 
 // receive tty data
 JNIEXPORT jstring JNICALL Java_com_ipaloma_scannerdemo_MainActivity_receiveTTyData(JNIEnv * env, jobject jobj)

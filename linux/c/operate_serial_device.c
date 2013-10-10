@@ -1,3 +1,6 @@
+/*
+ * Reference: http://digilander.libero.it/robang/rubrica/serial.htm 
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
